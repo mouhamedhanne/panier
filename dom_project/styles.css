@@ -1,0 +1,24 @@
+#products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product{
+    text-align: center;
+}
+
+#productItem{
+    width: 25%;
+    text-align: center;
+    border: solid;
+    padding: 8px;
+}
+
+.image{
+    width: 90%;
+    height: 35%;
+}
+
+.quantity{
+    padding-inline: 10px;
+}
