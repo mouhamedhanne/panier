@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .emploi{
+    margin-top: 120px;
+    margin-right: 65px;
+    margin-left: 65px;
+}
+
+.container_emploi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:2rem;
+}
+
+#box{
+    padding:1rem;
+    border-radius: .5rem;
+    box-shadow: .4rem .4rem 1rem gray;
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    background-color: #F5F5F5;
+}
+
+/*#box i{
+    font-size:2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}*/
+
+#box h4{
+    font-size: 1.2rem;
+    padding-bottom: rem;
+    color:black;
+}
+
+#box p{
+    color: black;
+}
+
+#box::before{
+    content: '';
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--principal);
+    z-index: -1;
+    clip-path: circle(3rem at 5% 0%);
+    transition: .3s linear;
+}
+
+#box:hover::before{
+    clip-path: circle(100%);
+}
+
+#box:hover > *{
+    color:#fff;
+}
+
+#box button{
+    display: block;
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: blue;
+    border: none;
+    font-size: 15px; 
+}
+
+#box button:hover{
+    color: blue;
+}
+
+.job_link{
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.job_box li{
+    height: 25px;
+    width: 25px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.job_box li a{
+    color: black;
+}
+
+.job_box li a:hover, .bande_active{
+    color: #fff; 
+    padding: 5px;
+    background-image: linear-gradient(to left, #6db9ef, #0b03ff);
+}
+
+
+/*.voirPlus{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.voirPlus .btn_plus{
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    font-size: 20px;
+    padding: 5px 30px 5px 30px;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.voirPlus .btn_plus:hover{
+    background-color: blue;
+    color: #fff;
+}*/
+    </style>
+    
+    <section class="emploi">
+        <div class="container_emploi">
+            <div class="box1" id="box">
+                <h4>UX Designer</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box2" id="box">
+                <h4>Software Eng</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                   <!-- Nous recrutons un expert en développement logiciel.<br>
+                    Avec une solide expérience dans la programmation<br> 
+                    et volonté constante d'innovation, nous offrons un <br>
+                    environnement dynamique pour développer des solution<br>
+                    logicielles de pointe.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box3" id="box">
+                <h4>Comptable</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Nous recherchons un comptable qualifié et rigoureux.<br> Si 
+                    vous êtes un professionel de confiance avec une solide <br>
+                    connaissances des principes comptables et une expériences<br> 
+                    dans la gestion des finances, rejoignez notre équipe.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box4" id="box">
+                <h4>Photographe</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Notre entreprise souhaite recruter un photographe<br> passionné, 
+                    créatif et talentueux. Si vous avez l'oeil<br> pour capturer des 
+                    moments uniques une maîtrise<br> des techniques de photographie 
+                    et une expérience<br> dans ce domaine rejoignez notre equipe.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box5" id="box">
+                <h4>Graphiste</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Opportunité pour un graphiste talentueux, vous<br> êtes créatif 
+                    passionné de design graphique.<br> Si vous maîtriser les logiciels 
+                    de conceptions, avec<br> un oeil pour l'esthétique, rejoignez notre team <br>
+                    de graphiste.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box6" id="box">
+                <h4>Agent de Sécurité</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Notre entreprise recherche des professionnels fiables<br> et attentifs pour
+                    assurer la sûreté de nos locaux.<br> Si vous avez une formation en Sécurité, 
+                    de solides<br>compétences en observation et une capacité à gérer<br> les situations 
+                    d'urgence. Postulez dès maintenant.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box7" id="box">
+                <h4>Data Scientist</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Nous recherchons un expert analytique hautement<br> qualifié pour extraire des 
+                    connaissances précieuses<br> de nos vaste ensembles de données. Si vous avez<br> une 
+                    solides expérience en modélisation statistiques<br> et visualisations de données, 
+                    postuleez maintenant<br> pour faire partie de notre aventure.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+            <div class="box8" id="box">
+                <h4>Caissiere</h4>
+                <p>
+                    Notre entreprise recrute un expert passionné 
+                    par <br>l'optimisation des expériences utilisateur. 
+                    Avec une<br> solide expertise en recherche, prototypage et 
+                    conception.
+                    <!--Nous sommes à la recherche d'une caissiére<br> compétente et aimable pour rejoindre 
+                    notre équipe.<br> Si vous êtes orientée client, organisée et capable<br> de travailler 
+                    efficacement dans un environnement<br>  fluide, postulez dés maintenant.-->
+                </p>
+                <button>POSTULER</button>
+            </div>
+        </div>
+        
+        <div class="job_link">
+            <ul class="job_box">
+                <li class="left_direction"><a href="#">&#8592;</a></li>
+                <li class="bande_active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="right_direction"><a href="#">&#8594;</a></li>
+            </ul>
+        </div>
+        <!--<div class="voirPlus">
+            <button class="btn_plus">Voir plus</button>
+        </div>-->
+    </section>
+
+
+
+    <p>Bienvenue sur mon blog dédié à la recherche d'emploi et à la formation ! Ici, vous trouverez une mine d'informations et de ressources pour vous aider à atteindre vos objectifs professionnels.
+
+        Mon blog vise à fournir des conseils pratiques et des astuces pour optimiser votre recherche d'emploi. Que vous soyez à la recherche d'un premier emploi, d'une transition de carrière ou simplement d'améliorer vos compétences professionnelles, vous trouverez des articles pertinents et inspirants pour vous guider tout au long du processus.
+        
+        En plus des conseils sur la recherche d'emploi, mon blog propose également des articles sur la formation continue et le développement professionnel. Je crois fermement que l'apprentissage est un élément essentiel pour réussir dans le monde du travail en constante évolution. Vous découvrirez donc des recommandations de formations, des revues de cours en ligne, des idées pour améliorer vos compétences techniques et bien plus encore.
+        
+        J'aborde également des sujets tels que la rédaction de CV et de lettres de motivation percutantes, les techniques d'entretien, la gestion de carrière et les stratégies pour se démarquer sur le marché de l'emploi. Vous trouverez également des articles sur l'équilibre entre vie professionnelle et personnelle, l'épanouissement au travail et la gestion du stress.
+        
+        Je suis ravi de partager mes connaissances et mon expérience avec vous, et j'espère que mon blog vous aidera à trouver l'emploi de vos rêves et à atteindre vos objectifs professionnels. N'hésitez pas à explorer les articles et à laisser des commentaires si vous avez des questions ou des sujets que vous aimeriez voir abordés. Bonne lecture !</p>
+
+</body>
+</html>

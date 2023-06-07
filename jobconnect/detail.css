@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;400;600;800 & family= Rubik:wght@300;400;500;600; 700 & display=swap');
+
+:root{
+    --principal: #0076de;
+ }
+
+body{
+    background-color: #F5F5F5 /*#F5F5F5*/;
+}
+
+.job-details{
+    margin: 1rem 5rem;
+}
+
+.job-details h1{
+    text-align: center;
+    color: var(--principal);
+    font-size: 2rem;
+}
+
+.job-details .details{
+    background-color: #fff;
+    border-radius: 5px;
+   /* border: var(--principal);*/
+    padding: 2rem;
+}
+
+.job-details .details h3{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.job-details .details .job-infos a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--principal);
+}
+
+.job-details .details .job-infos a:hover{
+    text-decoration: underline;
+}
+
+.job-details .details .job-infos p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color:  gray;
+}
+
+.job-details .details .basic-détails{
+    background-color: #F5F5F5;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0 2rem;
+}
+
+.job-details .details .basic-détails p{
+    color: gray;
+    font-size: 18px;
+}
+
+.job-details .details ul{
+    margin: 1rem 0;
+}
+
+.job-details .details ul li{
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+}
+
+.job-details .details .description{
+    margin-left: 2rem;
+}
+
+.job-details .details .description p{
+    font-size: 1.2rem;
+}
+
+.flex-btn a{
+    text-decoration: none;
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: var(--principal);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flex-btn a:hover{
+    background-color: #fff;
+    color: var(--principal);
+    border: 1px solid var(--principal);
+}
+
